@@ -1,0 +1,14 @@
+<launch>
+
+  <node pkg="flight_code" type="turtle_cl_node" name="flight_node" output="screen">
+    <rosparam file="$(find flight_code)/launch/param.yaml" command="load" />
+  </node>
+
+  <include file="$(find mavros)/launch/px4.launch"/>
+  #change vrpn launch file name as needed;
+  <include file="$(find vrpn_client_ros)/launch/f330.launch"/>
+
+
+
+
+</launch>

@@ -1,0 +1,4 @@
+takeoffAltitude: 1.0
+forwardVel: 0.5
+vel_time: 5.0
+safety_lim: 1.0
